@@ -32,11 +32,13 @@ int main(int argc, const char *argv[])
     NSLog(@"Caption = \"%@\"", [p caption]); 
     NSLog(@"Caption2 = \"%@\"", [p Caption]); 
     NSLog(@"Caption2 = \"%@\"", p.Caption); 
+    p->at=123;
 
     NSLog(@"Photographer = \"%@\"", [p photographer]); 
     NSLog(@"concat result \"%@\"", [p concat:@"head" withWord:@"end"]); 
     NSLog(@"area %f", [p area]);
     NSLog(@"str area %@", [p strArea]);
+    NSLog(@"at value %d", p->at );
 
     [pool drain]; 
 

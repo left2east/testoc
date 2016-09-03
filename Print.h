@@ -6,6 +6,9 @@
      NSString *photographer; 
      float area; 
      NSString *strArea; 
+    int bt;
+     @public
+        int at;
 } 
 
 @property (nonatomic, copy) NSString *caption; 
