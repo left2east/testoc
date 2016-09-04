@@ -1,5 +1,6 @@
 #import<Foundation/Foundation.h>
 #import "Print.h" 
+#import "People.h" 
 
 int main(int argc, const char *argv[]) 
 
@@ -17,6 +18,9 @@ int main(int argc, const char *argv[])
     // 初始化 
 
     Print* p = [[Print alloc] init]; 
+    People* z = [[People alloc] init];
+    z.age = 27;
+    z.name = @"zuoerdong";
 
     // 设置器调用 
 
@@ -30,6 +34,7 @@ int main(int argc, const char *argv[])
     // 获取器调用 
 
     NSLog(@"Caption = \"%@\"", [p caption]); 
+    NSLog(@"Caption = \"%@\"", p.caption); 
     NSLog(@"Caption2 = \"%@\"", [p Caption]); 
     NSLog(@"Caption2 = \"%@\"", p.Caption); 
     p->at=123;
@@ -39,6 +44,9 @@ int main(int argc, const char *argv[])
     NSLog(@"area %f", [p area]);
     NSLog(@"str area %@", [p strArea]);
     NSLog(@"at value %d", p->at );
+    NSLog(@"curl %@", [Print curl]);
+    [z say];
+    [z say:@"nihao"];
 
     [pool drain]; 
 

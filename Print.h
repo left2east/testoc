@@ -19,5 +19,6 @@
 
 + (NSString*)printName; 
 - (NSString*)concat:(NSString*) word1 withWord:(NSString*) word2;
++ (NSString*)curl; 
 @end 
 
